@@ -13,7 +13,7 @@ public class Select {
             Class.forName("com.mysql.cj.jdbc.Driver");
             // this line will load the Driver class in the memory
 
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Employees", "root", "Deven@123");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employees", "root", "Deven@123");
             // This line will create a connection b/w java application and database
             PreparedStatement ps = con.prepareStatement("select * from registeremp");
             // this line prepare whatever u demand and put inside ps variable
