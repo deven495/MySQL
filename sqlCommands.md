@@ -6,7 +6,7 @@
 tip1-databases are cyclinder-> in which all the tables(u can call them classes) are kept->in side the class u have related attributes which defines the table;
 tip2-letters can be uppercase and lowercase as well but u should write keywords in upper case that is a default convention :)
 
-<<<<<<<DML COMMANDS>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<DML COMMANDS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     <create database database_name;> -> database create krne k liye
     <use database_name;> -> bnane k baad usme enter krne k liye
     <show databases;> -> saare databases jitne b hai sql mai dekhne k liye 
@@ -68,6 +68,50 @@ tip2-letters can be uppercase and lowercase as well but u should write keywords 
     
 
 WE CAN ALSO SELECT MULTIPLE MIN MAX FUNTIONS-> <select avg(col_name), max(col_name) from table_name>;
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<DRL/DSL COMMANDS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DRL-><DATA RETRIEVAL LANGUAGE >
+DSL-><DATA SELECTION LANGUAGE>
+<TYPES>
+    1.FROM
+    2.WHERE
+    3.GROUP BY
+    4.HAVING
+    5.ORDER BY
+    6.AS
+<FROM>
+    <SELECT>
+    <select * from TABLE_NAME>
+    <select * from TABLE_NAME where COLUMN_NAME > 25;> ANY CONDITION CAN BE PLACED JUST LIKE IN JAVA/C++ etc;
+
+
+
+    mysql> select * from students;
+    +----------+----------------+------+-----------+
+    | id       | Names          | age  | extra_col |
+    +----------+----------------+------+-----------+
+    | 12110021 | Davinder_Kumar | 27   | NULL      |
+    | 12110022 | Bhupa_singh    | 27   | NULL      |
+    | 12110031 | kamal_kumar    | 26   | NULL      |
+    | 12110062 | rohan_kumar    | 29   | NULL      |
+    | 12110033 | abhinay_sharma | NULL | NULL      |
+    | 12110033 | abhinay_sharma | NULL | NULL      |
+    | 123      | tempval        | NULL | NULL      |
+    | temp     | NULL           | NULL | NULL      |
+    +----------+----------------+------+-----------+
+
+<WHERE> CAN BE USED WITH SELECT,UPDATE,DELETE AGGREGATE FUNCTIONS;
+    EXAMPLE;
+
+    mysql> select * from students where Names="kamal_kumar" and age > 25;
+    +----------+-------------+------+-----------+
+    | id       | Names       | age  | extra_col |
+    +----------+-------------+------+-----------+
+    | 12110031 | kamal_kumar | 26   | NULL      |
+    +----------+-------------+------+-----------+
+
+
+
 
 
         
