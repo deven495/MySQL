@@ -100,10 +100,12 @@ DSL-><DATA SELECTION LANGUAGE>
     | temp     | NULL           | NULL | NULL      |
     +----------+----------------+------+-----------+
 
-<WHERE> CAN BE USED WITH SELECT,UPDATE,DELETE AGGREGATE FUNCTIONS;
+<WHERE(similar to "if" used in other programming languages)> used to extract rows based on some conditions; 
+ CAN BE USED WITH SELECT,UPDATE,DELETE AGGREGATE FUNCTIONS;
     EXAMPLE;
 
     mysql> select * from students where Names="kamal_kumar" and age > 25;
+
     +----------+-------------+------+-----------+
     | id       | Names       | age  | extra_col |
     +----------+-------------+------+-----------+
